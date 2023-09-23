@@ -69,7 +69,7 @@ http://localhost:8080/api-docs/
 ```
 
 ## Demo video link 
-<a href="https://drive.google.com/file/d/1hniExYGN5eOzjZ0mjwcV6zRawrswCkBQ/view?usp=sharing">Demo video </a>
+<a href="https://drive.google.com/file/d/1hniExYGN5eOzjZ0mjwcV6zRawrswCkBQ/view?usp=sharing" target="_blank">Demo video </a>
 
 
 
