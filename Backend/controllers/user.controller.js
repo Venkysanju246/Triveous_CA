@@ -1,9 +1,80 @@
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     users:
+ *       type: object
+ *       required:
+ *         - email
+ *         - password
+ *         - phone
+ *       properties:
+ *         email:
+ *           type: string
+ *           description: The email of user
+ *         password:
+ *           type: string
+ *           description: The password of user
+ *         phone:
+ *           type: number
+ *           description: The phone number of user
+ *     
+ */
+/**
+* @swagger
+ * tags:
+*   name: Registration
+*   description: The users Auth API
+* /user/register:
+*   post:
+*     summary: Register a user
+*     tags: [users]
+*     requestBody:
+*       required: true
+*       content:
+*         application/json:
+*           schema:
+*             $ref: '#/components/schemas/users'
+*     responses:
+*       200:
+*         description: User Successfully Registered.
+*         content:
+*           application/json:
+*             schema:
+*               $ref: '#/components/schemas/users'
+*       500:
+*         description: Some server error
+* /user/login:
+*   post:
+*     summary: Login a user
+*     tags: [users]
+*     requestBody:
+*       required: true
+*       content:
+*         application/json:
+*           schema:
+*             $ref: '#/components/schemas/users'
+*     responses:
+*       200:
+*         description: Login Success.
+*         content:
+*           application/json:
+*             schema:
+*               $ref: '#/components/schemas/users'
+*       500:
+*         description: Some server error
+
+ */
+
+
+
 const express = require('express')
 const UserRoute = express.Router()
 const bcrypt = require('bcrypt')
 const jwt = require("jsonwebtoken")
 const { createTransport } = require("nodemailer")
 const UserModel = require('../models/user.model')
+require("dotenv").config()
 
 UserRoute.post("/register", async (req, res) => {
     try {
@@ -73,7 +144,7 @@ UserRoute.post("/login", async (req, res) => {
             bcrypt.compare(password, userCheck.password, (err, result) => {
                 if (result) {
                     const token = jwt.sign({ userID: userCheck._id }, process.env.JWT_SECRET, { expiresIn: "7d" })
-                    res.cookie("AccessToken", token, { maxAge: 1000 * 60 * 7 })
+                    res.cookie("AccessToken", token, { maxAge: 1000 * 60 * 17 })
                     return res.status(200).send({
                         msg: "Login Success",
                         token: token
