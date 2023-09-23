@@ -17,6 +17,11 @@
 
 - **Order Processing:** Users can place orders for items in their cart, and an order history feature is available.
 
+##  Database
+- **Mongo DB**
+- The application uses MongoDB as the database system for storing user data, product information, and order history. MongoDB is a NoSQL database that provides flexibility and scalability for managing structured and semi-structured data.
+
+
 ## Technical Highlights
 
 This eCommerce Backend project includes the following notable technical features:
