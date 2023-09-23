@@ -29,6 +29,8 @@ This eCommerce Backend project includes the following notable technical features
 
 - **Token Generation:** Generates access tokens for user authentication and authorization.
 
+-  **Cookies** - Implemented cookies for session management and user authentication.
+
 - **OpenAI Integration:** Integrates with OpenAI to enhance product descriptions and correct grammar mistakes in real-time.
 
 ## API Documentation
