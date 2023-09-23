@@ -31,6 +31,15 @@ This eCommerce Backend project includes the following notable technical features
 
 - **OpenAI Integration:** Integrates with OpenAI to enhance product descriptions and correct grammar mistakes in real-time.
 
+## API Documentation
+
+Explore the API endpoints and documentation using Swagger:
+
+- **Swagger Documentation:** [http://localhost:8080/api-docs/#/](http://localhost:8080/api-docs/#/)
+
+This interactive documentation provides detailed information about the available API endpoints, request parameters, and responses. It's a valuable resource for developers and users to understand and interact with your eCommerce Backend API.
+
+
 
 ## Installation
 
@@ -45,6 +54,11 @@ npm install
 3. Run the command
 ```
 npm run server
+```
+4. To view Swagger Documentation - 
+open - 
+```
+http://localhost:8080/api-docs/
 ```
 
 **You are all set**
