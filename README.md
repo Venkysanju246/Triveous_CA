@@ -17,6 +17,21 @@
 
 - **Order Processing:** Users can place orders for items in their cart, and an order history feature is available.
 
+## Technical Highlights
+
+This eCommerce Backend project includes the following notable technical features:
+
+- **Password Hashing:** Securely stores user passwords using bcrypt for enhanced security.
+
+- **Regex Validation:** Utilizes regular expressions (Regex) for data validation, ensuring data integrity, especially checks for length of the phone number.
+
+- **Email Sending:** Sends email notifications for successful registered users.
+
+- **Token Generation:** Generates access tokens for user authentication and authorization.
+
+- **OpenAI Integration:** Integrates with OpenAI to enhance product descriptions and correct grammar mistakes in real-time.
+
+
 ## Installation
 
 Follow these steps to set up the eCommerce Backend locally:
