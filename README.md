@@ -54,19 +54,26 @@ Follow these steps to set up the eCommerce Backend locally:
 
 1. Clone the repository
 
-2. Install dependencies using 
+2. Change Directory
+```
+cd backend
+```
+3. Install dependencies using 
 ```
 npm install
 ```
-3. Run the command
+4. Run the command
 ```
 npm run server
 ```
-4. To view Swagger Documentation - 
+5. To view Swagger Documentation - 
 open - 
 ```
 http://localhost:8080/api-docs/
 ```
+
+## Note - 
+Don't forget to changes .env field values.
 
 ## Demo video link 
 <a href="https://drive.google.com/file/d/1hniExYGN5eOzjZ0mjwcV6zRawrswCkBQ/view?usp=sharing" target="_blank">Demo video </a>
