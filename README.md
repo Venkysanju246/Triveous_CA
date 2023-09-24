@@ -53,8 +53,11 @@ This interactive documentation provides detailed information about the available
 Follow these steps to set up the eCommerce Backend locally:
 
 1. Clone the repository
+```
+git clone url
+```
 
-2. Change Directory
+3. Change Directory
 ```
 cd backend
 ```
